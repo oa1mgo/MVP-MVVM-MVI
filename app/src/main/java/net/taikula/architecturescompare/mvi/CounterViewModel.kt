@@ -29,8 +29,9 @@ class CounterViewModel : ViewModel() {
         }
     }
 
-    data class CounterState(
-        val curCount: Int = 0
-    )
-
 }
+
+
+data class CounterState(
+    val curCount: Int = 0
+)
