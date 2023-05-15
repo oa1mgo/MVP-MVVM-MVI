@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ArchitecturesCompare</string>
+    <string name="add_random">add random in 1~10</string>
+    <string name="reset">reset</string>
 </resources>
