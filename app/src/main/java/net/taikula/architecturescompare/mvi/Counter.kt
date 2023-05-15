@@ -8,8 +8,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
+import net.taikula.architecturescompare.R
 import net.taikula.architecturescompare.mvi.ui.theme.ArchitecturesCompareTheme
 
 @Composable
@@ -26,10 +28,10 @@ fun Counter(
             style = MaterialTheme.typography.titleLarge,
         )
         Button(onClick = { viewModel.addRandom() }) {
-            Text(text = "add random in 1~10")
+            Text(text = stringResource(id = R.string.add_random))
         }
         Button(onClick = { viewModel.reset() }) {
-            Text(text = "reset")
+            Text(text = stringResource(id = R.string.reset))
         }
     }
 }
